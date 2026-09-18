@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: medassistant
+  datasource:
+    url: jdbc:postgresql://localhost:5432/medassistant
+    username: medassistant
+    password: medassistant
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  ai:
+    google:
+      genai:
+        apikey: ${GOOGLE_AI_API_KEY}
+        chat:
+          options:
+            model: gemini-3.1-flash-lite
+
+
+
+
