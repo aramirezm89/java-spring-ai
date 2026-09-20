@@ -28,4 +28,6 @@ public class TestChatClient implements CommandLineRunner {
         log.info(response);
 
     }
+
+
 }
